@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <a href="index.html"><img src="image_vidéo/613b592e1d35ab0004c469e4.png" alt="Logo"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#">Présentation</a></li>
+            <li><a href="creation.html">Créations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="image_vidéo/supernatural.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image_vidéo/sorciere.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image_vidéo/chat.jpg" />
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+  </script>
+    <footer>
+        <div class="wrapper">
+            <p>&copy; 2024-2025. Tous droits réservés.</p>
+            <p>Site réalisé par Lucas Leloux</p>
+            <p>EPSE</p>
+        </div>
+    </footer>
+</body>
+</html>
